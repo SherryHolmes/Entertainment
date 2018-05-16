@@ -31,8 +31,11 @@
         </div>
       </div> 
 
-      <Table height="200">
 
+      <div class="row">
+        <div class="col-xs-10">
+          <table class="table table-hover">
+            <tbody>
               
               <tr v-for="(data) in (comic_content)">
                 <td><router-link :to="{name:'ComicPicShow', query:{name:data[0].name, page:data[0].page, path:data[0].path} }">{{data[0].name}}</router-link></td>
@@ -41,8 +44,8 @@
                 <td><router-link :to="{name:'ComicPicShow', query:{name:data[3].name, page:data[3].page, path:data[3].path} }">{{data[3].name}}</router-link></td>
               </tr>
               
-
-    </Table>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
